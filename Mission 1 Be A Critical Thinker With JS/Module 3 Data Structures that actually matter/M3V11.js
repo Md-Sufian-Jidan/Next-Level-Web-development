@@ -90,7 +90,7 @@ class Stack {
         if (this.isEmpty()) {
             this.top = newStack;
         } else {
-            this.top.next = newStack;
+            // this.top.next = newStack;
             this.top = newStack;
         }
 
@@ -122,8 +122,8 @@ class Stack {
     };
 
     isEmpty() {
-        if (this.length === 0) return true;
-    };
+        return this.length === 0;
+    }
 
     print() {
         currentNode = this.top;
