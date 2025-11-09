@@ -2,11 +2,11 @@
 
 let bazarList: string[] = ["eggs", "milk", "sugar"];
 
-bazarList.push(12);
+// bazarList.push(12);
 
 let mixedArr: (string | number)[] = ['eggs', 12, 'milk', 5, 'sugar', 1];
 
-mixedArr.push(true);
+// mixedArr.push(true);
 
 let coordinates: [number, number] = [20, 30]; // tuple
 
@@ -37,4 +37,4 @@ const user: {
 
 // user.organization = "Programming Hero Fire";
 
-console.log(user);
+// console.log(user);
