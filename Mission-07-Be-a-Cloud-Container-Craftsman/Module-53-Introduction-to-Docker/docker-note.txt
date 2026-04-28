@@ -1,0 +1,4 @@
+* What is Docker?
+=> jadur baxxo docker. Docker core feature & ngnix diye docker aa deploy korbo.
+
+Docker is a platform that allows developers to build, package and run applications inside container.

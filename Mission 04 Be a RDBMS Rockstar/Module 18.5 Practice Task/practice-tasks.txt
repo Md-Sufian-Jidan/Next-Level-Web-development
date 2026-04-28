@@ -1,0 +1,9 @@
+হ্যালো ডেভেলপারস,
+
+
+
+আপনাদের জন্য মডিউল ১৬, ১৭ এবং ১৮ এর উপর ভিত্তি করে Practice Task চলে আসল । ঠাণ্ডা মাথায় প্র্যাকটিস করে ফেল!
+
+Practice Link:
+
+https://github.com/Apollo-Level2-Web-Dev/postgreSQL_query_task
