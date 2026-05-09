@@ -1,0 +1,30 @@
+What is docker?
+=> Docker is a platform that allows developers to build, package, and run applications inside containers.
+
+A container includes:
+
+- Application code
+- Runtime
+- Libraries
+- Dependencies
+- System tools
+
+Why we need docker
+=> Docker is used to package applications and their dependencies into lightweight, isolated containers, ensuring software runs consistently across different environments (laptop, testing, production
+
+Where we use docker?
+=> Docker bujar agee amader sdlc pattern ta buja dorkar.
+Let's understand SDLC (Software development life cycle)
+1) Planning
+2) Design
+3) Implementing => create docker file => run container
+4) Testing => build => run => test => destroy
+5) Deployment => build => push to registry => deploy on server
+6) Maintenance
+
+How docker run in different os
+=> Linux == Native
+=> Windows == use Linux VM(Virtual Machine)
+=> Mac == use Linux VM(Virtual Machine)
+
+
