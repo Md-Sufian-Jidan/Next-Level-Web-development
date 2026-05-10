@@ -1,3 +1,162 @@
 54-1: What is Images & Containers
 
-Docker Image
+Docker Image anc Containers
+
+Dockerfile => Docker Image(Read-only) => App2 (Read and write)
+
+54-2: Understanding Image Types and Using Pre-built Images
+
+Docker image er kono prokar bedd hoi na
+
+1. Base images => Ubuntu
+2. Official Images => Docker hub
+3. Custom Images => amader nijeder ready kora containers
+
+for building a docker image with a name
+
+docker build -t my-image .
+
+for seeing the docker image
+
+docker images
+
+For building a docker container
+
+docker run --name my-container my-image:latest
+
+jei image er nam ba tag thake na take dangling image bole
+
+docker ps diye docker er process dekha jai
+
+# Docker Commands
+
+docker --help eii command dile docker er sb command dekhabe
+
+docker images --help dile docker images er skol command dekhabe
+
+# Docker images Commands
+
+docker pull => docker pull nginx => Download image from docker hub
+docker images => docker images => list all local images
+docker build => docker build -t my-app . => Build image from Dockerfile
+docker rmi => docker rmi nginx => Remove an image
+docker tag => docker tag my-app my-app:v1 => Add tag/version to image
+docker push => docker push username/my-app => push image to registry
+docker image prune => docker image prune => Remove unused images
+docker inspect => docker inspect nginx => View image details
+
+
+# Docker content lifecycle
+
+
+# Dcoker container commands
+
+docker run => docker run nginx => create & start container
+docker run -d => docker run -d nginx => Run in the background
+docker run -p => docker run -p 8080:80 nginx => Map ports
+docker ps => docker ps => List running containers
+docker stop => docker stop container_id => stop container
+docker start => docker start container_id => start stopped container
+docker restart => docker restart container_id => Restart container
+docker rm => docker rm container_id => Remove container
+docker logs => docker logs container_id => View container logs
+docker exec -it => docker exec -it container_id sh => Access container terminal
+docker container prune => docker container prune => Remove stopper containers
+docker system prune => docker system prune => Remove all unused data
+
+# Fault Tolerance
+What could go wrong with your app?
+- Resource spike
+- Dependency unavailable
+- application bug
+- Manual stop
+- system reboot
+
+Docker container restart policies:
+1) --restart always
+2) --restart unless-stopped
+3) --restart on-failure
+
+
+----------------------------------------------------------------------------------------------------
+
+# 54-1: What are Docker Images & Containers
+
+## Docker Image & Container Concept
+
+```txt
+Dockerfile → Docker Image (Read-only) → Docker Container (Read & Write)
+```
+
+* **Dockerfile:** এখানে অ্যাপ রান করার সকল instruction লেখা থাকে।
+* **Docker Image:** Dockerfile থেকে তৈরি হয়। এটি একটি read-only blueprint/template।
+* **Docker Container:** Image থেকে তৈরি running instance। এখানে data read/write করা যায়।
+
+---
+
+# 54-2: Understanding Image Types & Using Pre-built Images
+
+## Docker Image Types
+
+### 1. Base Images
+
+* একদম basic operating system image
+* Example: Ubuntu
+
+### 2. Official Images
+
+* Docker Hub এ Docker team বা official maintainers provide করে
+* Example: Node, MongoDB, Nginx
+
+### 3. Custom Images
+
+* Developer নিজের প্রয়োজন অনুযায়ী তৈরি করে
+* Example: নিজের app এর image
+
+---
+
+# Important Docker Commands
+
+## Docker Image Build করার জন্য
+
+```bash
+docker build -t my-image .
+```
+
+* `-t` দিয়ে image এর name/tag দেওয়া হয়
+* `.` মানে current directory এর Dockerfile use হবে
+
+---
+
+## সব Docker Images দেখার জন্য
+
+```bash
+docker images
+```
+
+---
+
+## Docker Container তৈরি ও রান করার জন্য
+
+```bash
+docker run --name my-container my-image:latest
+```
+
+* `--name` দিয়ে container এর নাম দেওয়া হয়
+* `my-image:latest` হলো image name ও tag
+
+---
+
+## Dangling Image
+
+যে image এর কোনো নাম বা tag থাকে না তাকে **Dangling Image** বলে।
+
+---
+
+## Running Containers / Processes দেখার জন্য
+
+```bash
+docker ps
+```
+
+* বর্তমানে চলমান docker container/process দেখা যায়
