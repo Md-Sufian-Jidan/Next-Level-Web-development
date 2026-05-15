@@ -1,0 +1,74 @@
+1) Why data management matters in docker?
+
+=> docker run -it --name test-container ubuntu bash
+
+eii command dile Linux er ubuntu er bash aa chole jabo.
+- ls diye tar file gula ke dekte pari
+- echo diye kono file banate pari => echo "file content" filename.extension
+- cat filename diye file ke read korte pari
+- exit diye ubuntu thike ber hote pari
+
+
+Containers are designed to be:
+- Replaceable
+- Restartable
+- Disposable
+
+amra docker aa ja ja rakte pari
+1) Database
+2) User Uploads
+3) Authentication sessions
+4) Logs
+5) Configuration Files
+
+Understanding Data Categories
+- App Code
+- Temp Runtime Data
+- Persistent Data
+
+Type
+- App code
+- Temp data
+- Persistent data
+
+Lives where
+- Image
+- Container layer
+- Volume
+
+Lifecycle
+- Until rebuild
+- Until container removed
+- Long-term
+
+
+** The writeable container layer
+ 
+
+
+Docker volume has 2 type
+1) anonymous volume
+2) named volume
+
+Type
+- anonymous
+- Named
+
+Name
+- Random id
+- Custom name
+
+Easy to manage
+- Hard 
+- Easy
+
+Reusable
+- Limited
+- Yes
+
+
+
+
+
+
+
