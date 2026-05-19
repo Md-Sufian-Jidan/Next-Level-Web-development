@@ -1,0 +1,22 @@
+Module 59 VPS deployment using Docker, Nginx And CICD setup using Github Action
+
+Reverse Proxy
+
+Client -> Reverse Proxy -> Server
+
+1) Load Balancing
+2) Security (Hides backend servers)
+3) Single entry point (one domain for all services)
+4) HTTPS/SSL handling
+5) Better performance (caching/compression)
+6) Routing to different services
+7) Easy scaling of servers
+8) Fault tolerance (Handles server failure)
+
+* What is TLS?
+=> TLS is the industry-standard successor to the older SSL (Secure Sockets Layer) protocol. Its primary purpose is to ensure privacy and data integrity between applications (like web browsers and servers) to prevent eavesdropping and data tampering.
+
+Docker term
+1) single stage build
+2) Multi stage build
+
