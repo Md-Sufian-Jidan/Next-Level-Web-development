@@ -1,0 +1,6 @@
+74-1 Refactoring Project Structure & Creating DTOs
+
+dto - Data Transfer Object
+
+file structure
+- entity.go

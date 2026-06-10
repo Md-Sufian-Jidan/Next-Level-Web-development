@@ -1,0 +1,17 @@
+GoTickets
+
+Project Structure
+Database Connection
+Password Hashing
+Jwt Authentication
+Request Validation
+Service Layer
+Repository Layer
+Database Relationship
+Concurrency Handling
+
+
+Go
+Echo
+PostgreSQL
+GORM
