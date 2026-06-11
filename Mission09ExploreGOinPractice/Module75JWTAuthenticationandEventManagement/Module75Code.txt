@@ -1,0 +1,12 @@
+Module 75 JWT Authentication and Event Management
+
+You will find the code in the module 73 folder.
+
+Work Process
+1) entity.go te amra amader entity gula define korbo. jemon ta amra interface ba model banai seivabe.
+2) dto/response.go te amra kibabe response dite chai seitar model banabo.
+3) dt0/request.go te amra kibabe request ta asbe sei model create korbo.
+4) then amara repository.go file aa db connect korbo
+5) then service.go te amra amader service banabo and logic lekbo.
+6) then amra handler.go file aa amra amader actual handler lekbo.
+7) trpr handler er kaj ses a amra amder route gula handle korbo tar jonno amra amader register.go file aa amader route gula define korbo and eita db and echo ke nibe
