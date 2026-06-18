@@ -9,4 +9,5 @@ Work Process
 4) then amara repository.go file aa db connect korbo
 5) then service.go te amra amader service banabo and logic lekbo.
 6) then amra handler.go file aa amra amader actual handler lekbo.
-7) trpr handler er kaj ses a amra amder route gula handle korbo tar jonno amra amader register.go file aa amader route gula define korbo and eita db and echo ke nibe
+7) trpr handler er kaj ses a amra amder route gula handle korbo tar jonno amra amader register.go file aa amader route gula define korbo and eita db and echo ke nibe.
+
